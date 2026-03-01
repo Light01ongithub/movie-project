@@ -1,0 +1,57 @@
+/* Main page container */
+.Home {
+  padding: 30px 40px;
+  min-height: 100vh;
+  background-color: #121212;
+  color: white;
+  box-sizing: border-box;
+}
+
+/* ---------- SEARCH BAR ---------- */
+
+.search-from {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.search-input {
+  padding: 10px 15px;
+  width: 300px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-input:focus {
+  box-shadow: 0 0 5px #00d4ff;
+}
+
+.search-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #00d4ff;
+  color: black;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-button:hover {
+  background-color: #00a6c4;
+}
+
+/* ---------- MOVIE GRID ---------- */
+
+.movies-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+
+  max-width: 1200px;
+  margin: auto;
+}

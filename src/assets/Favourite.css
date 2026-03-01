@@ -1,0 +1,86 @@
+/* FAVOURITES PAGE */
+.favourites {
+  padding: 100px 20px 40px 20px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+}
+
+.favourites h2 {
+  text-align: center;
+  color: #e50914;
+  font-size: 32px;
+  margin-bottom: 40px;
+  text-shadow: 0 2px 10px rgba(229, 9, 20, 0.3);
+}
+
+/* MOVIES GRID */
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1024px) {
+  .movies-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .favourites {
+    padding: 80px 15px 30px 15px;
+  }
+
+  .favourites h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .movies-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .favourites {
+    padding: 70px 10px 20px 10px;
+  }
+
+  .favourites h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .movies-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+  }
+}
+
+/* EMPTY FAVOURITES MESSAGE */
+.Favourites {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+}
+
+.Favourites h1 {
+  color: #e50914;
+  font-size: 36px;
+  margin-bottom: 15px;
+  text-shadow: 0 2px 10px rgba(229, 9, 20, 0.3);
+}
+
+.Favourites p {
+  color: #aaa;
+  font-size: 18px;
+  text-align: center;
+}

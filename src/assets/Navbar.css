@@ -1,0 +1,33 @@
+/* Remove browser default spacing */
+body {
+  margin: 0;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #1e1e2f;
+  padding: 15px 40px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+}
+
+/* Links container */
+.nav-brand {
+  display: flex;
+  gap: 30px;
+}
+
+/* Links style */
+.nav-brand a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-brand a:hover {
+  color: #00d4ff;
+}
