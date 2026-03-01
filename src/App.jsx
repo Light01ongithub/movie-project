@@ -2,7 +2,7 @@
 
 
 import { Movieprovider } from './context/moviecontext'
-import Home from './pages/home';
+import Home from './pages/Home';
 import Moviecards from './componenets/Moviecards';
 import { Routes, Route } from 'react-router-dom';
 import Favourites from './pages/Favourite';
